@@ -1,0 +1,9 @@
+{
+  "name": "Copy of Wuya AI - Agriculture Intelligence",
+  "description": "A comprehensive AI-powered agriculture platform for African farmers, featuring plant diagnosis, soil scanning, market access, and cooperative insights.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ]
+}
