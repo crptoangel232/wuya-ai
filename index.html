@@ -1,64 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-    <title>Wuya AI</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              earth: {
-                50: '#fdf8f6',
-                100: '#f2e8e5',
-                500: '#a05e46',
-                900: '#43281e',
-              },
-              leaf: {
-                50: '#f0fdf4',
-                100: '#dcfce7',
-                500: '#22c55e',
-                600: '#16a34a',
-                900: '#14532d',
-              }
-            }
-          }
-        }
-      }
-    </script>
-    <style>
-      /* Custom scrollbar for cleaner look */
-      ::-webkit-scrollbar {
-        width: 6px;
-        height: 6px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #f1f1f1; 
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #cbd5e1; 
-        border-radius: 10px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #94a3b8; 
-      }
-    </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
-    "recharts": "https://aistudiocdn.com/recharts@^3.4.1"
-  }
-}
-</script>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wuya AI — Agricultural Intelligence Platform</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Inter',sans-serif;background:#0d1f0d;color:#e0e0e0;line-height:1.6;}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:20px 40px;border-bottom:1px solid rgba(255,255,255,0.1);}
+.nav-logo{font-size:20px;font-weight:800;color:#22c55e;}
+.nav-links a{color:#bdc3c7;text-decoration:none;font-size:14px;margin-left:20px;}
+.hero{padding:80px 40px;text-align:center;max-width:800px;margin:0 auto;}
+.hero h1{font-size:42px;font-weight:900;background:linear-gradient(135deg,#22c55e,#16a34a);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:16px;}
+.hero p{font-size:17px;color:#95a5a6;margin-bottom:30px;max-width:600px;margin-left:auto;margin-right:auto;}
+.badge{display:inline-block;background:rgba(34,197,94,0.15);color:#22c55e;padding:6px 16px;border-radius:100px;font-size:13px;font-weight:600;margin-bottom:20px;}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;max-width:900px;margin:0 auto;padding:0 40px 60px;}
+.feature-card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:30px;transition:transform 0.2s,border-color 0.3s;}
+.feature-card:hover{transform:translateY(-3px);border-color:#22c55e;}
+.feature-icon{font-size:32px;margin-bottom:12px;}
+.feature-card h3{color:#e0e0e0;font-size:18px;margin-bottom:8px;}
+.feature-card p{color:#95a5a6;font-size:14px;}
+.cta{padding:14px 32px;background:linear-gradient(135deg,#22c55e,#16a34a);color:#0d1f0d;border:none;border-radius:10px;font-size:15px;font-weight:bold;cursor:pointer;text-decoration:none;display:inline-block;}
+.cta:hover{transform:translateY(-2px);box-shadow:0 5px 20px rgba(34,197,94,0.3);}
+.tech{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;max-width:600px;margin:0 auto 40px;padding:0 40px;}
+.tech span{padding:6px 14px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;font-size:13px;color:#22c55e;}
+.footer{text-align:center;padding:30px;color:#555;font-size:13px;border-top:1px solid rgba(255,255,255,0.05);}
+</style>
 </head>
-  <body class="bg-gray-50 text-gray-900 antialiased selection:bg-leaf-200">
-    <div id="root"></div>
-  </body>
+<body>
+<nav class="nav">
+<div class="nav-logo">🌾 Wuya AI</div>
+<div class="nav-links">
+<a href="#features">Features</a>
+<a href="https://github.com/crptoangel232/wuya-ai" target="_blank">GitHub</a>
+<a href="https://crptoangel232.github.io/My-Portfolio-Website/" target="_blank">Portfolio</a>
+</div>
+</nav>
+<section class="hero">
+<div class="badge">Agricultural Intelligence</div>
+<h1>Wuya AI — Agricultural Intelligence Platform</h1>
+<p>AI-powered tools for farming optimization and agricultural decision-making. Built for farmers and agricultural teams in West Africa to improve crop yields and reduce spoilage.</p>
+<a href="https://github.com/crptoangel232/wuya-ai" target="_blank" class="cta">View Source Code</a>
+</section>
+<div class="tech">
+<span>TypeScript</span><span>React</span><span>Tailwind CSS</span><span>AI / ML</span>
+</div>
+<div class="features" id="features">
+<div class="feature-card"><div class="feature-icon">🌱</div><h3>Crop Intelligence</h3><p>AI-driven insights on crop health, planting schedules, and yield predictions.</p></div>
+<div class="feature-card"><div class="feature-icon">📡</div><h3>Field Monitoring</h3><p>Real-time monitoring of field conditions, weather, and soil health indicators.</p></div>
+<div class="feature-card"><div class="feature-icon">🐛</div><h3>Pest Detection</h3><p>AI-assisted pest and disease detection with treatment recommendations.</p></div>
+<div class="feature-card"><div class="feature-icon">📈</div><h3>Yield Analytics</h3><p>Track and analyze harvest data to optimize future planting decisions.</p></div>
+<div class="feature-card"><div class="feature-icon">🚚</div><h3>Supply Chain</h3><p>Connect farmers to buyers and reduce post-harvest losses with spoilage alerts.</p></div>
+<div class="feature-card"><div class="feature-icon">🤖</div><h3>AI Assistant</h3><p>Farming assistant that answers questions and provides actionable recommendations.</p></div>
+</div>
+<div class="footer">Wuya AI — by Albert Taylor | Sierra Leone</div>
+</body>
 </html>
